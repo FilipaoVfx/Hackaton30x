@@ -1,0 +1,58 @@
+{
+  "_nota": "Datos mock e ilustrativos para el hackathon. Los umbrales exactos (valor del SMMLV, topes por ciudad, montos) deben validarse con fuentes oficiales antes de producción. La ELEGIBILIDAD la calcula el motor determinista, no la IA.",
+  "config": {
+    "smmlv_valor_cop": 1462000,
+    "anio": 2026,
+    "_nota_smmlv": "Valor ilustrativo. Reemplazar por el SMMLV oficial vigente."
+  },
+  "subsidios": [
+    {
+      "id": "vis",
+      "nombre": "VIS (Vivienda de Interés Social)",
+      "tipo": "categoria_vivienda",
+      "condiciones": {
+        "precio_max_smmlv": 150
+      },
+      "efecto": "Habilita el acceso a Mi Casa Ya y otros apoyos.",
+      "impacto_cuota_inicial_cop": 0
+    },
+    {
+      "id": "vip",
+      "nombre": "VIP (Vivienda de Interés Prioritario)",
+      "tipo": "categoria_vivienda",
+      "condiciones": {
+        "precio_max_smmlv": 90
+      },
+      "efecto": "Mayor apoyo estatal; dirigida a menores ingresos.",
+      "impacto_cuota_inicial_cop": 0
+    },
+    {
+      "id": "mi_casa_ya",
+      "nombre": "Mi Casa Ya",
+      "tipo": "subsidio_nacional",
+      "condiciones": {
+        "ingreso_max_smmlv": 4,
+        "tiene_vivienda": false,
+        "primer_subsidio": true,
+        "requiere_vis": true
+      },
+      "efecto": "Cobertura a la cuota inicial + apoyo a la tasa de interés.",
+      "impacto_cuota_inicial_cop": 30000000
+    },
+    {
+      "id": "sfv",
+      "nombre": "Subsidio Familiar de Vivienda (SFV)",
+      "tipo": "subsidio_caja",
+      "condiciones": {
+        "afiliado": true,
+        "ingreso_max_smmlv": 4,
+        "tiene_vivienda": false
+      },
+      "efecto": "Aporte directo de la caja de compensación a la cuota inicial. Monto según rango de ingreso.",
+      "tabla_por_ingreso": [
+        { "ingreso_max_smmlv": 2, "monto_cop": 15000000 },
+        { "ingreso_max_smmlv": 4, "monto_cop": 10000000 }
+      ]
+    }
+  ]
+}
