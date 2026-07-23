@@ -80,6 +80,19 @@ flowchart LR
 
 📄 Detalle técnico → [`docs/architecture.md`](docs/architecture.md)
 
+## 📊 Datos y evidencia
+
+Esto **no es un mock**: el diseño se apoya en **4.142 compradores reales** de Colsubsidio (2024–2026), entregados como recursos del reto → [`recursos/`](recursos/).
+
+Hallazgos que sostienen la solución:
+
+- **La tesis del reto está probada:** el canal **web (orgánico) trae 83.5% de afiliados** vs. ~73% de Redes/Whatsapp. El canal es señal de calidad.
+- **Colsubsidio conoce todo del afiliado, nada del no-afiliado:** el 100% de los no-afiliados llega sin datos de perfil; el afiliado llega completo. Esto valida la doctrina **inferir antes de preguntar**.
+- **Segmentación oficial de la caja** (Básico / Medio / Alto / Joven) reemplaza cualquier supuesto.
+- **20 proyectos reales** con brochure + tour 360 alimentan el recomendador.
+
+📄 Análisis completo → [`docs/data-insights.md`](docs/data-insights.md) · Diccionario de datos → [`recursos/README.md`](recursos/README.md)
+
 ## 🎬 Demo
 
 **El jurado recorre el flujo completo sin ayuda en ~2 minutos:**
@@ -134,10 +147,11 @@ El expediente no es una caja negra. Cada lead se evalúa en dimensiones explicab
 expediente-inteligente/
 ├── README.md              ← estás aquí
 ├── DECISIONS.md           ← por qué tomamos cada decisión de producto
-├── docs/                  ← problema, solución, arquitectura, pitch, jurados
+├── docs/                  ← problema, solución, arquitectura, pitch, jurados, data-insights
+├── recursos/              ← insumos oficiales del reto (base real 4.142 compradores)
 ├── planning/              ← visión, backlog, MVP, riesgos, guion de demo
 ├── prompts/               ← todos los prompts de IA (versionados)
-├── datasets/              ← data mock (leads, subsidios, proyectos, documentos)
+├── datasets/              ← data (leads mock + proyectos_reto.json real)
 ├── frontend/ · backend/ · api/ · ai/ · database/ · automation/ · scripts/
 ```
 

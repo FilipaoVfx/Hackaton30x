@@ -1,0 +1,144 @@
+{
+  "_nota": "Proyectos del Reto Vivienda con brochure y tour 360. Fuente: recursos/Links_brochures.xlsx (Colsubsidio).",
+  "_generado": "derivado de recursos oficiales del reto",
+  "proyectos": [
+    {
+      "ubicacion": "BOGOTÁ",
+      "proyecto": "LA ARBOLEDA",
+      "brochure": null,
+      "tour_360": "https://umbra3d.studio/recorridos/promotora-convivienda/la-arboleda-apto-tipo-a/",
+      "status": null
+    },
+    {
+      "ubicacion": "CHÍA",
+      "proyecto": "INARI",
+      "brochure": "https://heyzine.com/flip-book/8b6615372f.html",
+      "status": "Aprobado",
+      "tour_360": "https://umbra3d.studio/recorridos/colsubsidio/inari/41.60mt/"
+    },
+    {
+      "ubicacion": "CIUDADELA CALLE 80",
+      "proyecto": "ABETO",
+      "brochure": null,
+      "tour_360": "https://umbra3d.studio/masterplans/ojo-de-pez/abeto/",
+      "status": null
+    },
+    {
+      "ubicacion": "CIUDADELA CALLE 80",
+      "proyecto": "ARAUCARIA",
+      "brochure": "https://heyzine.com/flip-book/26d2b013cf.html",
+      "status": "Aprobado",
+      "tour_360": "https://shape.com.co/360/COLSUBSIDIO-AMARILO_ARAUCARIA/"
+    },
+    {
+      "ubicacion": "CIUDADELA CALLE 80",
+      "proyecto": "LOS NOGALES",
+      "brochure": "https://heyzine.com/flip-book/9dd9bf814e.html",
+      "status": "Aprobado",
+      "tour_360": "https://shape.com.co/360/COLSUBSIDIO-AMARILO_LOSNOGALES/"
+    },
+    {
+      "ubicacion": "CIUDADELA MAIPORÉ",
+      "proyecto": "LA MACARENA",
+      "brochure": "https://heyzine.com/flip-book/b168b2f5ba.html",
+      "status": "Aprobado"
+    },
+    {
+      "ubicacion": "CIUDADELA MAIPORÉ",
+      "proyecto": "MONGUI",
+      "brochure": "https://heyzine.com/flip-book/866af8f6a6.html",
+      "status": "Aprobado",
+      "tour_360": "https://storage.net-fs.com/hosting/7532170/19/"
+    },
+    {
+      "ubicacion": "CIUDADELA MAIPORÉ",
+      "proyecto": "PAMPLONA",
+      "brochure": "https://heyzine.com/flip-book/c159d5d733.html",
+      "status": "Aprobado",
+      "tour_360": "https://storage.net-fs.com/hosting/7532170/18/"
+    },
+    {
+      "ubicacion": "CIUDADELA MAIPORÉ",
+      "proyecto": "VERSALLES",
+      "brochure": "https://heyzine.com/flip-book/be784b0d5c.html",
+      "status": "Aprobado",
+      "tour_360": "https://shape.com.co/360/COLSUBSIDIO-Versalles_APTOAhttps://shape.com.co/360/COLSUBSIDIO-Versalles_APTOBhttps://shape.com.co/360/COLSUBSIDIO-Versalles_APTOChttps://shape.com.co/360/COLSUBSIDIO-Versalles_AMENIDADES"
+    },
+    {
+      "ubicacion": "CIUDADELA MAIPORÉ",
+      "proyecto": "ZARZAL",
+      "brochure": "https://heyzine.com/flip-book/56764c1e33.html",
+      "status": "Aprobado",
+      "tour_360": "https://zarzal.shape.com.co"
+    },
+    {
+      "ubicacion": "GIRADOT",
+      "proyecto": "RESERVA DE AGUAYACÁN",
+      "brochure": "https://heyzine.com/flip-book/aa430852c2.html",
+      "status": "Aprobado",
+      "tour_360": "https://storage.net-fs.com/hosting/8270899/0/"
+    },
+    {
+      "ubicacion": "MULTIPROYECTO",
+      "proyecto": "MULTIPROYECTO",
+      "brochure": "https://heyzine.com/flip-book/1de36642fc.html",
+      "status": "Aprobado",
+      "tour_360": null
+    },
+    {
+      "ubicacion": "MULTIPROYECTO",
+      "proyecto": "REVISTA",
+      "brochure": "https://heyzine.com/flip-book/1cdf69c6d5.html",
+      "status": "Aprobado"
+    },
+    {
+      "ubicacion": "RICAURTE",
+      "proyecto": "KARAKALI",
+      "brochure": "https://heyzine.com/flip-book/5083a3d46c.html",
+      "status": "Aprobado",
+      "tour_360": "https://umbra3d.studio/masterplans/colsubsidio/karakali/"
+    },
+    {
+      "ubicacion": "RICAURTE",
+      "proyecto": "PAYANDÉ",
+      "brochure": "https://heyzine.com/flip-book/34ac4d8a9e.html",
+      "status": "Aprobado",
+      "tour_360": "https://storage.net-fs.com/hosting/6021405/17/"
+    },
+    {
+      "ubicacion": "RICAURTE",
+      "proyecto": "SAMÁN",
+      "brochure": "https://heyzine.com/flip-book/1daa8c80c5.html",
+      "status": "Aprobado",
+      "tour_360": "https://storage.net-fs.com/hosting/8321237/0/"
+    },
+    {
+      "ubicacion": "RICAURTE",
+      "proyecto": "VIBO ONCE",
+      "brochure": "https://heyzine.com/flip-book/d3d1f61d6b.html",
+      "status": "Aprobado",
+      "tour_360": "https://umbra3d.studio/recorridos/colsubsidio/vibo/tipo-a/"
+    },
+    {
+      "ubicacion": "TOCANCIPÁ",
+      "proyecto": "BOSQUE DE ARRAYÁN",
+      "brochure": "https://heyzine.com/flip-book/7f3c85cf46.html",
+      "status": "Aprobado",
+      "tour_360": "https://storage.net-fs.com/hosting/8270899/1/"
+    },
+    {
+      "ubicacion": "TOCANCIPÁ",
+      "proyecto": "BOSQUE DE TURPIAL",
+      "brochure": "https://heyzine.com/flip-book/5eec0a2afc.html",
+      "status": "Aprobado",
+      "tour_360": "https://salasdeventas.com/Turpial_Apto_B/"
+    },
+    {
+      "ubicacion": "UBATE",
+      "proyecto": "VERDE ESPERANZA",
+      "brochure": "https://heyzine.com/flip-book/ea1997d7ae.html",
+      "status": "Aprobado",
+      "tour_360": null
+    }
+  ]
+}
