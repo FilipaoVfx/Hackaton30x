@@ -25,6 +25,15 @@
 - [ ] Demostrar el mismo cerebro con ≥2 canales reales
 - [ ] Panel del asesor con cola priorizada
 
+## Fase 2b — Experiencia WhatsApp (Home Discovery) 📱
+> Requerimiento completo → [`whatsapp-experience.md`](whatsapp-experience.md)
+- [ ] Narrative Engine (motivaciones con peso) — [`../datasets/narrativas.json`](../datasets/narrativas.json)
+- [ ] Feature Store (señales de comportamiento → pesos de narrativa)
+- [ ] WhatsApp Flows de perfilamiento + calculadora de subsidio
+- [ ] Home Match por afinidad (requiere amenidades por proyecto)
+- [ ] Templates de nutrición (fuera de la ventana de 24 h)
+- [ ] Registro de autorización de datos (Habeas Data) en el opt-in
+
 ## Fase 3 — Nutrición 🌱
 - [ ] Flujo de nutrición para leads COLD
 - [ ] Reglas de reactivación (vuelve en X meses / al cambiar condiciones)

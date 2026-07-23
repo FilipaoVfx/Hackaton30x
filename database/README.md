@@ -10,9 +10,13 @@ Persistencia del **expediente vivo** y su historia.
 ## Esquema
 Ver [`schema.sql`](schema.sql). Entidades principales:
 - `leads` — el lead canónico crudo por canal.
-- `expedientes` — el estado vivo (score, prioridad, siguiente acción).
+- `expedientes` — el estado vivo (perfil, segmento, narrativa dominante, score, prioridad, next best action).
 - `eventos` — timeline del expediente (auditable).
 - `subsidios_aplicables` — resultado del motor de subsidios por expediente.
+- `narrativas_expediente` — motivaciones con peso/confianza (Narrative Engine, WhatsApp).
+- `senales` — Feature Store: señales de comportamiento (clics, vistas).
+- `objeciones` — objeciones detectadas (alimenta al Advisor Copilot).
+- `recomendaciones` — Home Match: proyectos por afinidad.
 
 ## Nota
 El CRM real está **fuera de alcance**: esta base **simula** el CRM para la demo. Datos semilla en [`../datasets/`](../datasets/) y seeder en [`../scripts/`](../scripts/).

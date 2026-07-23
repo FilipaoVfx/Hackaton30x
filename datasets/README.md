@@ -8,7 +8,8 @@ Datos **reales**, derivados de la base oficial del reto ([`../recursos/hackathon
 | `canal_priors.json` | P(afiliado) por canal (`MEDIO`) — sesga la inferencia en el enriquecimiento | Agregado real de la base |
 | `segmentacion_caja.json` | Segmentación oficial de Colsubsidio (Básico/Medio/Alto/Joven) + familiar DANE | Guía oficial del reto |
 | `leads_muestra.json` | Muestra de perfiles reales usados como leads de demo/validación, con `_ground_truth` (consolidado/desistido) | Muestreo real de la base (seed fijo) |
-| `proyectos_reto.json` | 20 proyectos reales con brochure (heyzine) + tour 360 | `../recursos/Links_brochures.xlsx` |
+| `proyectos_reto.json` | 20 proyectos reales con brochure + tour 360. Slots `amenidades` / `narrativas_afines` **vacíos** (pendiente: extraer de brochures) | `../recursos/Links_brochures.xlsx` |
+| `narrativas.json` | Catálogo de narrativas (motivaciones) del Narrative Engine. `inferible` (anclado en la base) vs `preferencia` (Feature Store) | Diseño + anclaje en la base ([`../docs/whatsapp-experience.md`](../docs/whatsapp-experience.md)) |
 
 ## Regeneración
 Los agregados y la muestra se derivan de la base con un script determinista (seed 42). No se editan a mano: se regeneran desde [`../recursos/`](../recursos/).

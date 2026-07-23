@@ -55,28 +55,40 @@ Cada adaptador traduce su formato al **Lead Canónico**: un esquema único que e
 // Lead Canónico (ejemplo)
 {
   "id": "lead_R001",
-  "fuente": "meta_ads",        // meta_ads | google_ads | whatsapp | web | contact_center
+  "fuente": "whatsapp",        // meta_ads | google_ads | whatsapp | web | contact_center
   "campana": "vis-bogota-2026",
   "contacto": { "nombre": "María", "telefono": "+57...", "email": null },
-  "senales": {                  // lo que el canal ya nos dio
+  "senales": {                  // Feature Store: lo que el canal y la interacción dieron
     "proyecto_interes": "Los Nogales",
-    "utm": { "term": "casa subsidio bogota" }
+    "utm": { "term": "casa subsidio bogota" },
+    "eventos": ["click_pet", "view_pool"]   // señales de comportamiento (WhatsApp)
   },
   "perfil": {                   // se llena por inferencia + preguntas
     "afiliado": null,
+    "segmento": null,           // Básico | Medio | Alto | Joven (segmentación caja)
     "ingreso_smmlv": null,
+    "grupo_familiar": null,
     "tiene_vivienda": null,
     "situacion_credito": null
+  },
+  "narrativas": {               // Narrative Engine: motivaciones con peso
+    "dominante": null,
+    "pesos": {}                 // ej. { "primera_vivienda": 0.6, "pet_lover": 0.55 }
   },
   "expediente": {               // estado vivo
     "score": null,
     "prioridad": null,
+    "confianza": null,
     "subsidios": [],
+    "amenidades_favoritas": [],
+    "objeciones": [],
     "documentos_faltantes": [],
-    "siguiente_accion": null
+    "next_best_action": null    // asesor | nutrir | documentos | agendar | esperar
   }
 }
 ```
+
+> El canal **WhatsApp** enriquece este modelo con **narrativas** (motivaciones) y **señales de comportamiento** (Feature Store). Ver [`whatsapp-experience.md`](whatsapp-experience.md).
 
 ### 3 · Cerebro (IA + reglas)
 - **Enriquecimiento / Inferencia:** deduce lo posible de las señales (canal, campaña, UTM). ¿La campaña era de VIS? Probablemente ingreso bajo-medio. ¿Vino de un formulario de afiliados? Probablemente afiliado.

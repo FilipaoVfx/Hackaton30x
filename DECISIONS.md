@@ -68,3 +68,18 @@ Formato: cada decisión = **contexto → decisión → por qué → alternativa 
 - **Decisión:** usamos la **base real anonimizada** ([`recursos/`](recursos/), 4.142 compradores) para derivar ICP, priors por canal y la muestra de leads ([`datasets/`](datasets/)); la **conexión en vivo** se simula. Cero data sintética.
 - **Por qué:** el reto pide demostrar la **inteligencia de perfilamiento**, no plomería de integración. Con datos reales el valor se ve sin depender de accesos que no tenemos; sin inventar cifras que un jurado podría cuestionar.
 - **Alternativa descartada:** ~~leads y proyectos inventados~~ (borrados) y ~~integraciones reales~~ (se va el tiempo del hackathon en autenticación, no en el producto).
+
+## ¿Por qué clasificar por narrativa y no solo por ingresos?
+
+- **Contexto:** el reto pide perfilar; lo obvio es segmentar por ingreso/afiliación.
+- **Decisión:** además del eje financiero, se clasifica por **narrativa** (motivación: Primera Vivienda, Familia, Pet Lover…) en el canal WhatsApp.
+- **Por qué:** la motivación es lo que engancha y lo que convierte una conversación en descubrimiento, no en interrogatorio. El Home Match ordena por **afinidad**, no por precio. La narrativa es también el gancho de cierre del asesor ("muéstrale el parque canino").
+- **Anclaje honesto:** 3 narrativas se **infieren de la base real** (Primera Vivienda = segmento Joven, la más grande; Familia; Inversionista); las demás son **señales de preferencia** que solo existen si el usuario interactúa. No se inventan datos. Ver [`docs/whatsapp-experience.md`](docs/whatsapp-experience.md).
+- **Alternativa descartada:** perfilar solo por ingreso → es lo que hace el CRM hoy; no diferencia, no engancha.
+
+## ¿Por qué "invisible" para preferencias pero transparente para el dinero?
+
+- **Contexto:** el UX pide que el usuario "nunca perciba que está siendo perfilado".
+- **Decisión:** perfilamiento **invisible** para señales de preferencia (mascota, cowork, parques); **transparencia y consentimiento** al pedir ingresos, afiliación o documentos.
+- **Por qué:** Meta **exige opt-in** para mensajear por WhatsApp, y los datos financieros/personales en Colombia caen bajo **Habeas Data (Ley 1581 de 2012)**. Pedir el dato con su finalidad ("esto me sirve para calcular tu subsidio") además **sube el `score_confianza`** (validado > inferido) y hace la solución defendible.
+- **Alternativa descartada:** recolección totalmente encubierta de datos sensibles → riesgo legal y de confianza, no defendible ante el jurado.

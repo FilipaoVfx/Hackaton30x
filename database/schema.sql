@@ -20,9 +20,13 @@ CREATE TABLE expedientes (
     lead_id             TEXT NOT NULL REFERENCES leads(id),
     -- perfil (validado o inferido)
     afiliado            BOOLEAN,          -- NULL = desconocido
+    segmento            TEXT,             -- Básico | Medio | Alto | Joven (segmentación caja)
     ingreso_smmlv       REAL,
+    grupo_familiar      INTEGER,
     tiene_vivienda      BOOLEAN,
     situacion_credito   TEXT,             -- buena | regular | mala | desconocida (mock DataCrédito)
+    -- narrativa (Narrative Engine, canal WhatsApp)
+    narrativa_dominante TEXT,             -- ej. primera_vivienda | familia | pet_lover
     -- resultado del scoring
     score_global        REAL,
     confidence          REAL,
@@ -36,8 +40,35 @@ CREATE TABLE expedientes (
     score_documentos    REAL,
     -- estado y acción
     estado              TEXT DEFAULT 'NUEVO', -- NUEVO | EN_PERFILAMIENTO | HOT | WARM | COLD | CERRADO
-    siguiente_accion    TEXT,
+    next_best_action    TEXT,             -- asesor | nutrir | documentos | agendar | esperar
     actualizado_en      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Narrativas (motivaciones) por expediente — Narrative Engine (WhatsApp)
+CREATE TABLE narrativas_expediente (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    expediente_id   TEXT NOT NULL REFERENCES expedientes(id),
+    narrativa       TEXT NOT NULL,        -- id de datasets/narrativas.json
+    peso            REAL,                 -- [0,1]
+    confianza       REAL,                 -- [0,1]
+    actualizado_en  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Feature Store: señales de comportamiento (clics, vistas) — canal WhatsApp
+CREATE TABLE senales (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    expediente_id   TEXT NOT NULL REFERENCES expedientes(id),
+    senal           TEXT NOT NULL,        -- ej. click_pet | view_pool | download_brochure
+    valor           TEXT,
+    creado_en       TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Objeciones detectadas (alimenta al Advisor Copilot)
+CREATE TABLE objeciones (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    expediente_id   TEXT NOT NULL REFERENCES expedientes(id),
+    objecion        TEXT NOT NULL,        -- ej. cuota_inicial | ubicacion | precio
+    detalle         TEXT
 );
 
 -- Subsidios aplicables calculados por el motor determinista
@@ -66,9 +97,12 @@ CREATE TABLE recomendaciones (
     expediente_id   TEXT NOT NULL REFERENCES expedientes(id),
     proyecto_id     TEXT NOT NULL,
     ranking         INTEGER,              -- 1 = mejor match
+    afinidad        REAL,                 -- Home Match: compatibilidad por afinidad, no por precio
     motivo          TEXT
 );
 
-CREATE INDEX idx_exp_prioridad ON expedientes(prioridad);
-CREATE INDEX idx_exp_estado    ON expedientes(estado);
-CREATE INDEX idx_eventos_exp   ON eventos(expediente_id);
+CREATE INDEX idx_exp_prioridad  ON expedientes(prioridad);
+CREATE INDEX idx_exp_estado     ON expedientes(estado);
+CREATE INDEX idx_eventos_exp    ON eventos(expediente_id);
+CREATE INDEX idx_narrativas_exp ON narrativas_expediente(expediente_id);
+CREATE INDEX idx_senales_exp    ON senales(expediente_id);

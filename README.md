@@ -49,6 +49,11 @@ Una capa de **calificación e inteligencia** entre el canal pago y el asesor. Re
 
 📄 Filosofía completa → [`docs/solution.md`](docs/solution.md)
 
+### 📱 Canal WhatsApp — Home Discovery Experience
+La boca principal es una experiencia conversacional en WhatsApp que **no se siente como chatbot ni formulario**: el usuario cree que descubre su hogar ideal mientras el sistema lo perfila de forma invisible. Un **Narrative Engine** clasifica motivaciones (Primera Vivienda, Familia, Pet Lover…) en vez de solo ingresos, usando features nativas de Meta (Reply Buttons, Lists, Flows, Templates).
+
+📄 Requerimiento + análisis → [`docs/whatsapp-experience.md`](docs/whatsapp-experience.md)
+
 ## 🏗 Arquitectura
 
 ```mermaid
@@ -126,7 +131,8 @@ El expediente no es una caja negra. Cada lead se evalúa en dimensiones explicab
 
 - **Frontend:** _(por definir — ver [`frontend/`](frontend/))_
 - **Backend / API:** _(por definir — ver [`backend/`](backend/), [`api/`](api/))_
-- **IA / LLM:** perfilamiento, extracción de datos, resumen de expediente — prompts versionados en [`prompts/`](prompts/)
+- **Canal conversacional:** Meta WhatsApp Business Platform (Reply Buttons, Lists, Flows, Templates) — ver [`docs/whatsapp-experience.md`](docs/whatsapp-experience.md)
+- **IA / LLM:** perfilamiento, extracción de datos, narrativas, resumen de expediente — prompts versionados en [`prompts/`](prompts/)
 - **Motor de subsidios:** reglas VIS/VIP, Mi Casa Ya, Subsidio Familiar de Vivienda (SFV) — ver [`docs/scoring-engine.md`](docs/scoring-engine.md)
 - **Automatización:** _(n8n / workflows — ver [`automation/`](automation/))_
 - **Datos:** datasets **reales** derivados de la base del reto en [`datasets/`](datasets/) (ICP, priors por canal, muestra de leads, proyectos)
@@ -147,7 +153,7 @@ El expediente no es una caja negra. Cada lead se evalúa en dimensiones explicab
 expediente-inteligente/
 ├── README.md              ← estás aquí
 ├── DECISIONS.md           ← por qué tomamos cada decisión de producto
-├── docs/                  ← problema, solución, arquitectura, pitch, jurados, data-insights
+├── docs/                  ← problema, solución, arquitectura, scoring, whatsapp-experience, pitch, jurados, data-insights
 ├── recursos/              ← insumos oficiales del reto (base real 4.142 compradores)
 ├── planning/              ← visión, backlog, MVP, riesgos, guion de demo
 ├── prompts/               ← todos los prompts de IA (versionados)

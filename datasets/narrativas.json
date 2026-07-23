@@ -1,0 +1,105 @@
+{
+  "_nota": "Catalogo de narrativas (motivaciones) del Narrative Engine. tipo='inferible' se ancla en la base real (segmento/edad/grupo familiar); tipo='preferencia' NO esta en la base y solo existe si el usuario interactua (Feature Store). Los pesos de preferencia arrancan heuristicos y se aprenden. No inventar datos para las de preferencia.",
+  "narrativas": [
+    {
+      "id": "primera_vivienda",
+      "emoji": "🏠",
+      "label": "Primera Vivienda",
+      "tipo": "inferible",
+      "anclaje_datos": "Segmento Joven (menor de 39, sin personas a cargo). ES EL SEGMENTO REAL MAS GRANDE: 23% Joven, 43% cero personas a cargo.",
+      "senales": ["view_first_home", "click_subsidio", "no_tiene_vivienda"],
+      "peso_inicial": 0.5,
+      "confianza_inicial": 0.7
+    },
+    {
+      "id": "familia",
+      "emoji": "👨‍👩‍👧",
+      "label": "Familia",
+      "tipo": "inferible",
+      "anclaje_datos": "NO_GRUPO_FAMILAR > 0; segmento Basico/Medio (con personas a cargo registradas).",
+      "senales": ["view_family", "click_colegios", "view_parques", "grupo_familiar_positivo"],
+      "peso_inicial": 0.5,
+      "confianza_inicial": 0.7
+    },
+    {
+      "id": "inversionista",
+      "emoji": "📈",
+      "label": "Inversionista",
+      "tipo": "inferible",
+      "anclaje_datos": "Rango salarial alto / ya tiene vivienda. Segmento Alto es ~0% en la base: narrativa rara en el ICP real.",
+      "senales": ["view_valorizacion", "click_renta", "ya_tiene_vivienda"],
+      "peso_inicial": 0.3,
+      "confianza_inicial": 0.5
+    },
+    {
+      "id": "pet_lover",
+      "emoji": "🐶",
+      "label": "Pet Lover",
+      "tipo": "preferencia",
+      "anclaje_datos": null,
+      "senales": ["click_pet", "view_parque_canino"],
+      "peso_inicial": 0.0,
+      "confianza_inicial": 0.0
+    },
+    {
+      "id": "home_office",
+      "emoji": "💻",
+      "label": "Home Office",
+      "tipo": "preferencia",
+      "anclaje_datos": null,
+      "senales": ["likes_cowork", "view_cowork", "click_remoto"],
+      "peso_inicial": 0.0,
+      "confianza_inicial": 0.0
+    },
+    {
+      "id": "naturaleza",
+      "emoji": "🌳",
+      "label": "Naturaleza",
+      "tipo": "preferencia",
+      "anclaje_datos": null,
+      "senales": ["view_zonas_verdes", "click_naturaleza"],
+      "peso_inicial": 0.0,
+      "confianza_inicial": 0.0
+    },
+    {
+      "id": "vida_activa",
+      "emoji": "🏃",
+      "label": "Vida Activa",
+      "tipo": "preferencia",
+      "anclaje_datos": null,
+      "senales": ["view_gym", "view_pool", "click_deporte"],
+      "peso_inicial": 0.0,
+      "confianza_inicial": 0.0
+    },
+    {
+      "id": "movilidad",
+      "emoji": "🚇",
+      "label": "Movilidad",
+      "tipo": "preferencia",
+      "anclaje_datos": "Parcial: la ubicacion del proyecto (UBICACION) da senal de cercania a transporte.",
+      "senales": ["click_transporte", "view_ubicacion", "view_vias"],
+      "peso_inicial": 0.0,
+      "confianza_inicial": 0.0
+    },
+    {
+      "id": "estilo_premium",
+      "emoji": "✨",
+      "label": "Estilo Premium",
+      "tipo": "preferencia",
+      "anclaje_datos": "Choca con la base: 78% de los compradores esta bajo 2 SMLV (VIS/VIP). Narrativa poco compatible con el ICP real.",
+      "senales": ["view_acabados", "click_premium"],
+      "peso_inicial": 0.0,
+      "confianza_inicial": 0.0
+    },
+    {
+      "id": "comunidad",
+      "emoji": "🤝",
+      "label": "Comunidad",
+      "tipo": "preferencia",
+      "anclaje_datos": null,
+      "senales": ["view_zonas_comunes", "click_comunidad", "view_salon_social"],
+      "peso_inicial": 0.0,
+      "confianza_inicial": 0.0
+    }
+  ]
+}
