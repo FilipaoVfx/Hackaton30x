@@ -31,9 +31,9 @@ Expediente:
 
 ```
 🔥 HOT — Afiliada, ingreso 3 SMMLV, primera vivienda.
-Capacidad: cubre la cuota de Ciudad Verde (VIS).
+Capacidad: cubre la cuota de Los Nogales (VIS).
 Subsidios: Mi Casa Ya + SFV → cuota inicial prácticamente cubierta.
-Proyecto recomendado: Ciudad Verde (mejor match por ingreso y ubicación).
+Proyecto recomendado: Los Nogales (mejor match por ingreso y ubicación).
 Siguiente acción: agendar visita a sala de ventas.
 Abre así: "María, con tu subsidio la cuota inicial queda muy baja, ¿te muestro el apartamento este sábado?"
 ```

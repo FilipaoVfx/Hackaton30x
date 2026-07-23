@@ -42,7 +42,7 @@ Extrae el perfil.
   "ingreso_smmlv":     { "valor": 3,     "origen": "inferido" },
   "tiene_vivienda":    { "valor": false, "origen": "validado" },
   "situacion_credito": { "valor": null,  "origen": null },
-  "proyecto_interes":  { "valor": "Ciudad Verde", "origen": "validado" },
+  "proyecto_interes":  { "valor": "Los Nogales", "origen": "validado" },
   "urgencia":          { "valor": "alta", "origen": "inferido" }
 }
 ```

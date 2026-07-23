@@ -1,0 +1,216 @@
+{
+  "_nota": "Prior real P(afiliado) por canal (MEDIO), derivado de 4142 compradores. Alimenta el enriquecimiento: sesga la inferencia de afiliacion segun el canal de entrada.",
+  "total_compradores": 4142,
+  "priors": [
+    {
+      "canal": "Banderas y/o señalización",
+      "ventas": 1797,
+      "pct_afiliado": 72.7,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Sin Informacion",
+      "ventas": 565,
+      "pct_afiliado": 66.9,
+      "es_canal_adquisicion": false
+    },
+    {
+      "canal": "Activación",
+      "ventas": 369,
+      "pct_afiliado": 78.9,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Referido Alcaldía",
+      "ventas": 285,
+      "pct_afiliado": 70.5,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Ferias empresariales",
+      "ventas": 282,
+      "pct_afiliado": 83.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Referido",
+      "ventas": 192,
+      "pct_afiliado": 71.9,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Valla ",
+      "ventas": 158,
+      "pct_afiliado": 68.4,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Whatsapp",
+      "ventas": 125,
+      "pct_afiliado": 74.4,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Redes Sociales",
+      "ventas": 124,
+      "pct_afiliado": 73.4,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Página web ",
+      "ventas": 91,
+      "pct_afiliado": 83.5,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Contact Center",
+      "ventas": 47,
+      "pct_afiliado": 78.7,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Campaña FNA",
+      "ventas": 15,
+      "pct_afiliado": 86.7,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "CS Tocancipá",
+      "ventas": 15,
+      "pct_afiliado": 80.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Valla proyecto sala de ventas",
+      "ventas": 14,
+      "pct_afiliado": 28.6,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "CS Unicentro de Occidente",
+      "ventas": 13,
+      "pct_afiliado": 46.2,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Banderas ",
+      "ventas": 9,
+      "pct_afiliado": 44.4,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Google",
+      "ventas": 5,
+      "pct_afiliado": 80.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Volantes",
+      "ventas": 4,
+      "pct_afiliado": 75.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Mensaje de texto",
+      "ventas": 4,
+      "pct_afiliado": 25.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Visita empresarial",
+      "ventas": 3,
+      "pct_afiliado": 100.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "CS Soacha",
+      "ventas": 3,
+      "pct_afiliado": 100.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Pantallas empresariales",
+      "ventas": 3,
+      "pct_afiliado": 33.3,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Revista Estrenar Vivienda",
+      "ventas": 3,
+      "pct_afiliado": 66.7,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Tus beneficios",
+      "ventas": 2,
+      "pct_afiliado": 100.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Fincaraíz",
+      "ventas": 2,
+      "pct_afiliado": 50.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "CS Calle 26",
+      "ventas": 2,
+      "pct_afiliado": 50.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "CS Girardot",
+      "ventas": 2,
+      "pct_afiliado": 100.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Radio ",
+      "ventas": 1,
+      "pct_afiliado": 0.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Guía de Vivienda",
+      "ventas": 1,
+      "pct_afiliado": 100.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Perifoneo",
+      "ventas": 1,
+      "pct_afiliado": 0.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "CS Calle 63",
+      "ventas": 1,
+      "pct_afiliado": 0.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "CS Cajicá",
+      "ventas": 1,
+      "pct_afiliado": 100.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "CS Funza",
+      "ventas": 1,
+      "pct_afiliado": 100.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Mi Casa de Feria Vecindario",
+      "ventas": 1,
+      "pct_afiliado": 0.0,
+      "es_canal_adquisicion": true
+    },
+    {
+      "canal": "Guía de Servicios",
+      "ventas": 1,
+      "pct_afiliado": 100.0,
+      "es_canal_adquisicion": true
+    }
+  ]
+}

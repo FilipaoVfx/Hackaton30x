@@ -8,7 +8,7 @@
 | 2 | Scope creep: se construye de más y no cierra el MVP | Alto | Alta | Congelar el [`mvp.md`](mvp.md). Nada de `nice-to-have` hasta MVP verde. |
 | 3 | El LLM alucina subsidios / elegibilidad | Alto | Media | **La IA no decide elegibilidad.** Reglas deterministas. La IA solo conversa/extrae. |
 | 4 | Perfilamiento se siente interrogatorio | Medio | Media | Máx. 3-4 preguntas, inferir primero, explicar el "por qué" de cada pregunta. |
-| 5 | Datos de subsidios incorrectos (umbrales, montos) | Medio | Alta | Marcar todo como mock/ilustrativo. Umbrales en config, no hardcode. Disclaimer en `datasets/subsidios.json`. |
+| 5 | Datos de subsidios incorrectos (umbrales, montos) | Medio | Alta | **No inventar montos:** la base del reto no los trae. Marcar subsidios aplicables por reglas, monto "a consultar fuente oficial". Usar segmentos oficiales de `datasets/segmentacion_caja.json`. |
 | 6 | Integración con canal real consume el tiempo | Alto | Media | Priorizar carga desde CSV. Canal real es 🟡, no 🔴. |
 | 7 | Nadie ensayó el pitch | Medio | Media | Ensayo obligatorio la noche antes. Guion en [`demo-script.md`](demo-script.md). |
 | 8 | Merge conflicts / caos de git | Medio | Media | Ramas por feature, PRs pequeños, main siempre desplegable. |

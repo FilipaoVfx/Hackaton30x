@@ -46,7 +46,7 @@ flowchart TD
    - ... (20 campos)
 
 ✅ Expediente Inteligente:
-   "Hola María 👋 Vi que te interesó Ciudad Verde.
+   "Hola María 👋 Vi que te interesó Los Nogales.
     Para recomendarte lo mejor: ¿estás afiliada a Colsubsidio?"
    → infiere el resto, pregunta solo lo esencial.
 ```

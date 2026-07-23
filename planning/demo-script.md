@@ -23,19 +23,21 @@
 
 ## Minuto 1:15–3:45 · La demo en vivo
 
-**Escenario A — Lead que cierra (HOT):** usar `lead_0001` (María).
-1. "Entra un lead por una pauta de Meta." → mostrar lead entrando.
-2. "El sistema ya sabe de dónde vino y **precarga** lo que infiere." → mostrar señales.
-3. "Pregunta **solo lo que falta**, sin interrogatorio." → responder 2-3 preguntas.
-4. "Calcula los **subsidios**: Mi Casa Ya + SFV." → mostrar subsidios.
-5. "Y da un **score con su razón**." → mostrar HOT + explicación.
-6. "Lo **rutea al asesor** con la recomendación de proyecto." → mostrar ruteo.
+> Se usan **perfiles reales** de la base ([`../datasets/leads_muestra.json`](../datasets/leads_muestra.json)), no leads inventados. Cada uno trae `_ground_truth` para validar en vivo.
 
-**Escenario B — Nadie se descarta (COLD):** usar `lead_0005` (Sofía).
-7. "Este lead aún no puede comprar. En vez de botarlo, entra a **nutrición** para volver más adelante. Ese es el propósito social de Colsubsidio."
+**Escenario A — Lead que cierra (HOT):** usar `lead_R002` (afiliado, Básico, 1–1.5 SMLV, consolidó de verdad).
+1. "Entra un lead por un canal." → mostrar lead entrando.
+2. "El sistema ya sabe de dónde vino y, por ser **afiliado**, precarga su perfil desde la caja." → mostrar precarga.
+3. "Pregunta **solo lo que falta**, sin interrogatorio." → responder 1-2 preguntas.
+4. "Da un **score con su razón**: encaja con el perfil ICP del proyecto." → mostrar HOT.
+5. "Lo **rutea al asesor** con la recomendación de proyecto (brochure + 360)." → mostrar ruteo.
+6. "Validación: este perfil **sí compró** en la realidad → el scorer lo confirma HOT."
 
-**(Opcional) Escenario C — No afiliado:** usar `lead_0004`.
-8. "Y a este lo distinguimos como **no afiliado** desde el inicio, por la regla 90/10."
+**Escenario B — No afiliado (regla 90/10):** usar `lead_R008` (no afiliado, llega 100% vacío).
+7. "El no afiliado llega **sin datos** — Colsubsidio solo conoce a sus afiliados. Se distingue desde el inicio por el cupo 90/10 y se le pide lo esencial o se rutea a afiliación."
+
+**Escenario C — En riesgo → nutrición:** usar `lead_R011` (afiliado que **desistió**).
+8. "En vez de perderlo, entra a **nutrición** para volver más adelante. Ese es el propósito social de Colsubsidio."
 
 ## Minuto 3:45–4:30 · Por qué escala (Impacto)
 > "Menos CPL desperdiciado, más horas del asesor en cierres, y nadie se pierde: los que no pueden hoy se nutren. Y escala: agregar WhatsApp o el contact center es agregar un adaptador, no reescribir el sistema."

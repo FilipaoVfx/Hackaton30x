@@ -1,0 +1,28 @@
+{
+  "_nota": "Segmentacion oficial de Colsubsidio (fuente: guia del reto). Autoritativo, reemplaza cualquier rango inventado.",
+  "segmento_poblacional": [
+    {
+      "segmento": "Basico",
+      "definicion": "Hasta 1.44 SMLV, con personas a cargo registradas"
+    },
+    {
+      "segmento": "Medio",
+      "definicion": "Entre 1.44 y 20 SMLV, con grupo familiar"
+    },
+    {
+      "segmento": "Alto",
+      "definicion": "Mas de 20 SMLV, con o sin grupo familiar"
+    },
+    {
+      "segmento": "Joven",
+      "definicion": "Menor de 39 anios sin personas a cargo registradas"
+    }
+  ],
+  "segmentacion_familiar_DANE": [
+    "monoparental",
+    "nuclear ampliada",
+    "monoparental ampliada",
+    "pareja conyugal"
+  ],
+  "_subsidios_nota": "Los programas VIS/VIP, Mi Casa Ya y SFV son politica real, pero la base NO trae montos de subsidio. No inventar montos: marcar como 'a consultar en fuente oficial'."
+}

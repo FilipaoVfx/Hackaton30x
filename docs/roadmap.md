@@ -7,7 +7,7 @@
 - [x] Filosofía de la solución → [`solution.md`](solution.md)
 - [x] Arquitectura y modelo canónico → [`architecture.md`](architecture.md)
 - [x] Diseño del motor de scoring → [`scoring-engine.md`](scoring-engine.md)
-- [x] Datasets mock → [`../datasets/`](../datasets/)
+- [x] Datasets reales (derivados de la base del reto) → [`../datasets/`](../datasets/)
 
 ## Fase 1 — MVP (lo que la demo DEBE mostrar) 🎯
 - [ ] Crear expediente desde un lead

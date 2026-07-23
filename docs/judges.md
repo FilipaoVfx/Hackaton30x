@@ -48,7 +48,7 @@ No se descartan. Entran a **nutrición** para volver más adelante — es parte 
 No. La IA **conversa y extrae**; la elegibilidad de subsidios la calculan **reglas deterministas** auditables. Ver [`scoring-engine.md`](scoring-engine.md).
 
 **¿Está integrado con el CRM real / DataCrédito?**
-No, y está fuera del alcance del reto. Se **simula** con mocks en [`../datasets/`](../datasets/). Lo que demostramos es la **inteligencia de perfilamiento**.
+La **integración en vivo** con CRM/DataCrédito está fuera del alcance del reto y se simula. Pero los datos **no son inventados**: usamos la **base real anonimizada** de 4.142 compradores ([`../recursos/`](../recursos/)) como evidencia y para derivar el ICP y los priors ([`../datasets/`](../datasets/)). Lo que demostramos es la **inteligencia de perfilamiento**.
 
 **¿Cómo escala a más canales?**
 Un solo cerebro, muchas bocas. Agregar un canal = agregar un adaptador al modelo canónico. Ver [`architecture.md`](architecture.md).

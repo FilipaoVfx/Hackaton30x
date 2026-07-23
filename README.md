@@ -129,7 +129,7 @@ El expediente no es una caja negra. Cada lead se evalúa en dimensiones explicab
 - **IA / LLM:** perfilamiento, extracción de datos, resumen de expediente — prompts versionados en [`prompts/`](prompts/)
 - **Motor de subsidios:** reglas VIS/VIP, Mi Casa Ya, Subsidio Familiar de Vivienda (SFV) — ver [`docs/scoring-engine.md`](docs/scoring-engine.md)
 - **Automatización:** _(n8n / workflows — ver [`automation/`](automation/))_
-- **Datos:** datasets mock en [`datasets/`](datasets/)
+- **Datos:** datasets **reales** derivados de la base del reto en [`datasets/`](datasets/) (ICP, priors por canal, muestra de leads, proyectos)
 
 ## 🗺 Roadmap
 
@@ -151,7 +151,7 @@ expediente-inteligente/
 ├── recursos/              ← insumos oficiales del reto (base real 4.142 compradores)
 ├── planning/              ← visión, backlog, MVP, riesgos, guion de demo
 ├── prompts/               ← todos los prompts de IA (versionados)
-├── datasets/              ← data (leads mock + proyectos_reto.json real)
+├── datasets/              ← data real derivada de la base (ICP, priors, leads_muestra, proyectos)
 ├── frontend/ · backend/ · api/ · ai/ · database/ · automation/ · scripts/
 ```
 

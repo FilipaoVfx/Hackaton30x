@@ -8,7 +8,7 @@ Leyenda: 🔴 crítico (MVP) · 🟡 importante · 🟢 opcional · Estado: `tod
 | # | Tarea | Prioridad | Estado | Owner |
 |---|---|---|---|---|
 | 1 | Definir modelo canónico de Lead (código) | 🔴 | todo | |
-| 2 | Adaptador: carga desde `datasets/leads.csv` | 🔴 | todo | |
+| 2 | Adaptador: carga desde `datasets/leads_muestra.json` (perfiles reales) | 🔴 | todo | |
 | 3 | Adaptador: 1 canal real (web form o WhatsApp) | 🟡 | todo | |
 | 4 | Seeder de base de datos (`scripts/`) | 🔴 | todo | |
 

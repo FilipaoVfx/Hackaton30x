@@ -51,8 +51,8 @@ Explícale al lead qué significan estos subsidios para su compra.
 ```
 ¡Buenas noticias, María! Como estás afiliada a Colsubsidio y es tu primera
 vivienda, aplicas a Mi Casa Ya y al Subsidio Familiar de Vivienda. Entre los
-dos cubren buena parte de tu cuota inicial en Ciudad Verde.
+dos cubren buena parte de tu cuota inicial en Los Nogales.
 ```
 
 ## Referencia de reglas (para el motor, no para la IA)
-Ver tabla de elegibilidad en [`../docs/scoring-engine.md`](../docs/scoring-engine.md) y datos en [`../datasets/subsidios.json`](../datasets/subsidios.json).
+Ver reglas de segmentación en [`../docs/scoring-engine.md`](../docs/scoring-engine.md) y datos en [`../datasets/segmentacion_caja.json`](../datasets/segmentacion_caja.json). Nota: la base del reto no trae montos de subsidio; el motor no inventa cifras.

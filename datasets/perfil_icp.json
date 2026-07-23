@@ -1,0 +1,168 @@
+{
+  "_nota": "Perfil real del comprador que cierra (ICP). Base 4142. Solo afiliados tienen segmento/salario/edad; % calculado sobre no-vacios.",
+  "afiliacion": {
+    "AFILIADO(A)": {
+      "n": 3020,
+      "pct": 72.9
+    },
+    "NO AFILIADO(A)": {
+      "n": 1042,
+      "pct": 25.2
+    },
+    "ESTUVO AFILIADO(A)": {
+      "n": 47,
+      "pct": 1.1
+    },
+    "GRUPO_FAMILIAR": {
+      "n": 33,
+      "pct": 0.8
+    }
+  },
+  "segmento": {
+    "Básico": {
+      "n": 1440,
+      "pct": 47.7
+    },
+    "Medio": {
+      "n": 871,
+      "pct": 28.8
+    },
+    "Joven": {
+      "n": 708,
+      "pct": 23.4
+    },
+    "Alto": {
+      "n": 1,
+      "pct": 0.0
+    }
+  },
+  "categoria": {
+    "A": {
+      "n": 2494,
+      "pct": 82.6
+    },
+    "B": {
+      "n": 401,
+      "pct": 13.3
+    },
+    "C": {
+      "n": 125,
+      "pct": 4.1
+    }
+  },
+  "rango_salarial": {
+    "Entre 1 y 1.5 SMLV": {
+      "n": 1954,
+      "pct": 64.7
+    },
+    "Entre 1.5 y 2 SMLV": {
+      "n": 415,
+      "pct": 13.7
+    },
+    "Entre 2 y 2.5 SMLV": {
+      "n": 146,
+      "pct": 4.8
+    },
+    "Menor al SMLV": {
+      "n": 132,
+      "pct": 4.4
+    },
+    "Entre 3 y 4 SMLV": {
+      "n": 99,
+      "pct": 3.3
+    },
+    "Entre 2.5 y 3 SMLV": {
+      "n": 89,
+      "pct": 2.9
+    },
+    "Entre 4 y 6 SMLV": {
+      "n": 48,
+      "pct": 1.6
+    },
+    "Menor a 2 SMLV": {
+      "n": 45,
+      "pct": 1.5
+    },
+    "Entre 10 y 20 SMLV": {
+      "n": 31,
+      "pct": 1.0
+    },
+    "Entre 6 y 8 SMLV": {
+      "n": 29,
+      "pct": 1.0
+    },
+    "Entre 8 y 10 SMLV": {
+      "n": 14,
+      "pct": 0.5
+    },
+    "Entre 2 y 4 SMLV": {
+      "n": 13,
+      "pct": 0.4
+    },
+    "Entre 4 y 8 SMLV": {
+      "n": 3,
+      "pct": 0.1
+    },
+    "Entre 8 y 19 SMLV": {
+      "n": 1,
+      "pct": 0.0
+    },
+    "Mayor a 30 SMLV": {
+      "n": 1,
+      "pct": 0.0
+    }
+  },
+  "rango_edad_top": {
+    "20 a 35 años": {
+      "n": 1140,
+      "pct": 37.7
+    },
+    "20 - 35 años": {
+      "n": 541,
+      "pct": 17.9
+    },
+    "36 a 45 años": {
+      "n": 532,
+      "pct": 17.6
+    },
+    "46 a 55 años": {
+      "n": 251,
+      "pct": 8.3
+    },
+    "36 - 45 años": {
+      "n": 226,
+      "pct": 7.5
+    }
+  },
+  "entidad_credito_top": {
+    "CAJA COLOMBIANA DE SUBSIDIO FAMILIAR COLSUBSIDIO": {
+      "n": 1241,
+      "pct": 30.2
+    },
+    "BANCO DAVIVIENDA S A": {
+      "n": 915,
+      "pct": 22.3
+    },
+    "FONDO NACIONAL DEL AHORRO": {
+      "n": 461,
+      "pct": 11.2
+    },
+    "BANCOLOMBIA SA": {
+      "n": 322,
+      "pct": 7.8
+    },
+    "BANCO DE BOGOTA": {
+      "n": 321,
+      "pct": 7.8
+    },
+    "LA HIPOTECARIA DE COLOMBIA S.A.": {
+      "n": 166,
+      "pct": 4.0
+    }
+  },
+  "desistimiento": {
+    "n": 550,
+    "pct": 13.3,
+    "_caveat": "Todos los desistimientos estan etiquetados MEDIO='Sin Informacion'; usar como tasa base, no por canal."
+  }
+}

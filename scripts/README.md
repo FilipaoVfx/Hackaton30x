@@ -6,7 +6,7 @@ Utilidades: seeders, generadores de data mock, helpers de setup.
 | Script | Propósito |
 |---|---|
 | `seed.*` | Cargar [`../datasets/`](../datasets/) en la base de datos |
-| `generate-leads.*` | Generar leads mock realistas por canal |
+| `sample-leads.*` | Muestrear leads reales de la base (`recursos/hackathon_VIVIENDA.xlsx`) |
 | `reset.*` | Limpiar y re-sembrar para la demo |
 
 ## Regla de oro para el hackathon

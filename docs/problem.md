@@ -57,4 +57,4 @@ uno por uno, en la conversación.
 - Integración real con CRM, DataCrédito o el bot actual del contact center.
 - Aprobación de crédito hipotecario o firma.
 
-> Estas fronteras se **simulan** con mocks en [`datasets/`](../datasets/). El foco es la **inteligencia de perfilamiento**.
+> La **integración en vivo** con estas fronteras se simula. Los datos que usamos son **reales**: la base anonimizada de 4.142 compradores en [`recursos/`](../recursos/) y sus derivados en [`datasets/`](../datasets/). El foco es la **inteligencia de perfilamiento**.

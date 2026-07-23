@@ -24,7 +24,7 @@ Contrato de la API entre frontend y backend. **Un solo cerebro, muchas bocas** �
   "confidence": 0.75,
   "razon": "Afiliada · ingreso 3 SMMLV cubre cuota · aplica Mi Casa Ya y SFV",
   "subsidios_aplicables": ["Mi Casa Ya", "SFV"],
-  "recomendaciones": [{ "proyecto": "Ciudad Verde", "ranking": 1 }],
+  "recomendaciones": [{ "proyecto": "Los Nogales", "ranking": 1 }],
   "siguiente_accion": "Enrutar a asesor · agendar visita"
 }
 ```

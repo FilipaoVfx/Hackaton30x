@@ -62,9 +62,9 @@ Formato: cada decisión = **contexto → decisión → por qué → alternativa 
 - **Por qué:** da trazabilidad al asesor y permite reactivar leads COLD con contexto. También sube el `confidence` al distinguir dato validado de inferido.
 - **Alternativa descartada:** solo estado final → se pierde el "por qué" y la posibilidad de nutrir con contexto.
 
-## ¿Por qué mocks en vez de integraciones reales?
+## ¿Por qué datos reales pero integración simulada?
 
-- **Contexto:** CRM, DataCrédito y el bot del contact center están **fuera de alcance**.
-- **Decisión:** se **simulan** con datasets en [`datasets/`](datasets/).
-- **Por qué:** el reto pide demostrar la **inteligencia de perfilamiento**, no plomería de integración. Los mocks dejan ver el valor sin depender de accesos que no tenemos.
-- **Alternativa descartada:** intentar integraciones reales → se va el tiempo del hackathon en autenticación y no en el producto.
+- **Contexto:** la integración en vivo con CRM, DataCrédito y el bot del contact center está **fuera de alcance**.
+- **Decisión:** usamos la **base real anonimizada** ([`recursos/`](recursos/), 4.142 compradores) para derivar ICP, priors por canal y la muestra de leads ([`datasets/`](datasets/)); la **conexión en vivo** se simula. Cero data sintética.
+- **Por qué:** el reto pide demostrar la **inteligencia de perfilamiento**, no plomería de integración. Con datos reales el valor se ve sin depender de accesos que no tenemos; sin inventar cifras que un jurado podría cuestionar.
+- **Alternativa descartada:** ~~leads y proyectos inventados~~ (borrados) y ~~integraciones reales~~ (se va el tiempo del hackathon en autenticación, no en el producto).

@@ -54,12 +54,12 @@ Cada adaptador traduce su formato al **Lead Canónico**: un esquema único que e
 ```jsonc
 // Lead Canónico (ejemplo)
 {
-  "id": "lead_0001",
+  "id": "lead_R001",
   "fuente": "meta_ads",        // meta_ads | google_ads | whatsapp | web | contact_center
   "campana": "vis-bogota-2026",
   "contacto": { "nombre": "María", "telefono": "+57...", "email": null },
   "senales": {                  // lo que el canal ya nos dio
-    "proyecto_interes": "Ciudad Verde",
+    "proyecto_interes": "Los Nogales",
     "utm": { "term": "casa subsidio bogota" }
   },
   "perfil": {                   // se llena por inferencia + preguntas
@@ -100,11 +100,11 @@ El score determina el destino:
 | IA extrae, reglas deciden | LLM para conversación; motor determinista para elegibilidad |
 | Explicable | Cada score guarda su desglose y su razón |
 | Sin humano en el loop | El flujo corre end-to-end automáticamente |
-| Mock donde no hay integración | CRM, DataCrédito y bot real se simulan con [`datasets/`](../datasets/) |
+| Datos reales, integración simulada | Base real anonimizada ([`../recursos/`](../recursos/)) + derivados en [`datasets/`](../datasets/); la conexión en vivo se simula |
 
-## Fuera de alcance (simulado con mocks)
-- CRM real → mock en `datasets/`
-- DataCrédito → señal de crédito simulada
+## Fuera de alcance (integración en vivo, simulada)
+- CRM real → se usa la base real anonimizada como stand-in; sin conexión en vivo
+- DataCrédito → señal de crédito simulada (la base no trae situación crediticia)
 - Bot del contact center → se representa como un canal más
 
 📄 Flujo de usuario → [`user-flow.md`](user-flow.md)
